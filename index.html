@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peaje Popayán - El Tambo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Peaje Popayán - El Tambo</h1>
+    <section class="banner">
+     <img src="recursos/peaje.jpg" alt="Peaje Popayán - El Tambo" class="img-peaje">
+    </section>
+
+  </header>
+
+  <section class="acciones">
+    <button id="btnAbrir">Abrir El Peaje</button>
+    <button id="btnCerrar" disabled>Cerrar El Peaje</button>
+  </section>
+
+  <section id="controles" class="deshabilitado">
+    <div class="vehiculos">
+      <figure>
+        <img src="recursos/auto.png" alt="Automóvil" id="btnAuto" />
+        <figcaption>$5.000</figcaption>
+      </figure>
+      <figure>
+        <img src="recursos/bus.png" alt="Bus" id="btnBus" />
+        <figcaption>$10.000</figcaption>
+      </figure>
+      <figure>
+        <img src="recursos/camion.png" alt="Camión" id="btnCamion" />
+        <figcaption>$15.000</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="panel-datos">
+    <label># Automóviles:
+      <input type="text" id="txtAutos" value="0" readonly />
+    </label>
+    <label># Buses:
+      <input type="text" id="txtBuses" value="0" readonly />
+    </label>
+    <label># Camiones:
+      <input type="text" id="txtCamiones" value="0" readonly />
+    </label>
+    <label># Total Recaudado:
+      <input type="text" id="txtTotal" value="$0" readonly />
+    </label>
+  </section>
+
+  // main
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
